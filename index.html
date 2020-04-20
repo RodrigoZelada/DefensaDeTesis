@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="es">
+	<head>
+    <title> Defensa Rodrigo Zelada Mancini</title>
+
+		<meta charset="utf-8">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- estilos base -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">  <!-- league -->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<style>
+              	.caja .MathJax_SVG SVG > g,
+			.caja .MathJax_SVG_Display SVG > g {
+				fill: lightblue;
+			   	stroke: none;
+     }
+
+    		.caja, .box {
+    			/*background-color: #243640;  #333;*/
+    			border: 1px solid lightblue;
+    			box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+    			display: inline-block;
+    		}
+    
+    		.caja {
+    			padding: 0.5em 1.5em;
+    			text-align: center;
+    			margin: 1em 0em;
+    		}
+    
+    		.caja p {
+    			color: white;
+    			margin: auto;
+    			text-align: left;
+    			word-wrap: break-word;
+    		}
+    
+    		.caja table {
+    			width: auto;
+    			margin: auto;
+    			text-align: left;
+    		}
+            
+			.theorem {
+			display: block;
+			font-style: italic; 
+            font-size: 0.8em;
+            /*background-color: #243640;  */
+  			border: 1px solid lightblue;
+            /*display: inline-block; */ 
+  			/*box-shadow: 0px 0px 6px rgba(0,0,0,0.8);  */      
+            /*//background-color: #333; #eee8d5; //#333;   ;//#243640;
+  			//border: 1px solid lightblue;
+  			//box-shadow: 0px 0px 6px #eee8d5; //rgba(0,0,0,0.8);       
+  			//display: inline-block;   //hasta acá agregué   */
+			}
+			.theorem:before {
+			content: "Teorema. ";
+			font-weight: bold;
+			font-style: normal;
+			color: #FF0000;
+			}
+			.theorem[text]:before {
+			content: "Teorema (" attr(text) ") ";
+			color: #FF0000;
+			}
+
+					.lemma {
+			    display: block;
+			    margin: 12px 0;
+			    font-style: italic;
+                font-size: 0.8em;
+                /*background-color: #243640;*/ 
+    			border: 1px solid lightblue;
+                display: inline-block;  
+			}
+			.lemma:before {
+			    content: "Lema.";
+			    font-weight: bold;
+			    font-style: normal;
+                color: #FF0000;
+			}
+			.prop {
+			    display: block;
+			    margin: 12px 0;
+			    font-style: italic;
+                font-size: 0.8em;
+               /* background-color: #243640;  */
+    			border: 1px solid lightblue;
+                display: inline-block; 
+                
+			}
+			.prop:before {
+			    content: "Proposición.";
+			    font-weight: bold;
+			    font-style: normal;
+                color: #FF0000;
+			}
+			.definition {
+			    display: block;
+			    margin: 12px 0;
+			    font-style: italic;
+                font-size: 0.8em;
+                /*background-color: #243640; */ 
+    			border: 1px solid lightblue;
+                display: inline-block; 
+                
+			}
+			.definition:before {
+			    content: "Definición.";
+			    font-weight: bold;
+			    font-style: normal;
+                color: #FF0000;
+			}
+
+		
+		</style>
+		<!-- lo puso reidmen, para que sirve? -->
+		<style>
+			div.container {
+				display: inline-block;
+			}
+		</style>
+		<!--
+        <style type="text/css">
+		  .reveal h1 {
+		    text-align: center;
+		  }
+			.reveal h2 {
+		    text-align: center;
+		  }
+			.reveal h3 {
+		    text-align: center;
+		  }
+			.reveal h4 {
+		    text-align: center;
+		  }
+			.reveal h5 {
+		    text-align: center;
+		  }
+		  .reveal p {
+		    text-align: left;
+		  }
+		  .reveal ul {
+		    display: block;
+		  }
+		  .reveal ol {
+		    display: block;
+		  }
+		</style>
+        -->
+
+		<!-- Scripts para impresióon Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!--<div id="milogo">
+					 <img src="imagenes/dim.png" alt =""
+					 style="position:absolute;top:5px;left:5px;"/>
+			  </div>-->
+
+				<section>
+					<img src="imagenes/dim.png" alt ="" style="float: left;"/>
+					<br>
+					<br>
+					<br>
+					<!--<img src="imagenes/dim.png" alt ="" style="position: absolute;top: 100px; left: 100px"/>-->
+					<br>
+				<h3>Modelo hidrodinámico de la marea roja <br> en la Bahía Quellón</h3>
+				<p align="center"><small>Rodrigo Zelada  Mancini<br>
+				Departamento de Ingeniería Matemática <br>
+				Universidad de Chile</small></p>
+			</section>
+
+			  </section>
+					<section>
+						<h3>	Tabla de contenidos </h3>
+						<ol>
+							<li> Introducción </li>
+							<li> Formulación Variacional de Stokes </li>
+							<li> Modelo Hidrodinámico</li>
+							<li> Método de Volúmenes Finitos</li>
+							  <ul>
+									<li> Discretización de Navier-Stokes</li>
+									<li> Discretización de Advección-Difusión</li>
+							  </ul>
+							<li>Resultados</li>
+							  <ul>
+									<li> Shallow Water </li>
+									<li> Navier-Stokes </li>
+									<li> Advección-Difusión </li>
+								</ul>
+							<li>Conclusión</li>
+							<li>Trabajo Futuro</li>
+						</ol>
+					</section>
+
+
+				<section>
+					   <section>
+					      <h2>	Introducción </h2>
+						 </section>
+						<section>
+							<br>
+							<p> El fenómeno de las mareas rojas ha afectado en las últimas décadas las costas del sur de Chile,
+							la región de los Lagos, la región de Aysén y la de Magallanes.
+							<!---En particular Chiloé se ha visto fuertemente afectado con estos episodios de marea roja,
+					    generando pérdidas ecónomicas para la industria pesquera y además peligro en la salud de quienes consumen mariscos,
+					    debido al nivel de toxicidad que generan las microoalgas de la marea roja.
+                        </p>  -->
+                        <ul>
+                        <li>Pérdidas económicas</li>
+                        <li>Salud</li>
+                        </ul>
+                <p align="center">
+	            <img width="35%" height="35%"  src="imagenes/MareaRoja/La-Jolla-Red-Tide.780.jpg" alt ="Red Tide off the Scripps Institution of Oceanography Pier, La Jolla California">
+	            <small class="caption"><b>Figura</b>: Red Tide off the Scripps Institution of Oceanography Pier, La Jolla California.</small>
+                </p>
+			     </section>
+				   <section>
+					   <h3>	¿Qué es la marea roja? </h3>
+					   <!--<small>-->
+						  <ol>
+                          <li> Incremento masivo de microoalgas en el mar </li> <!--, cuyos efectos pueden llegar a ser perjudiciales tanto para la salud del humano como para la economía. Su nombre se debe a que las Floraciones Algales (<em>Bloom</em>) pueden llegar a teñir el agua del mar de diversos colores, en que el más común es rojo.</li>-->
+                          <br>
+                          <li> <em>"Marea Roja"</em> </li>
+                          <br>
+            					     <!--<li>Más generalmente (y correctamente) se conoce como <em>Floraciones Algales Nocivas</em> (FAN), puesto que estas floraciones masivas se pueden dar sin teñir agua, pero sí siendo nocivas. Las FAN se pueden clasificar en tóxicas y no tóxicas.</li>-->
+                          <li> <em> Floraciones Algales Nocivas </em> (FAN) </li>
+  						 </ol>
+                          <br>
+                         <p>Algunos mariscos que concentran estas toxinas son los choritos, almejas, machas, locos y cholgas.</p>
+				   <!--</small>-->
+				  </section>
+
+					<section>
+					<h3>El problema de la marea roja</h3>
+					<ul>
+					<li> Para determinar si un marisco está contaminado con estas toxinas se debe hacer un análisis de laboratorio</li>
+					<br>
+					<li> Se hace imprescindible elaborar un modelo que pueda determinar los episodios de marea roja.</li>
+				  </ul>
+				  </section>
+				</section>
+
+
+				<section>
+					 <section>
+				   <h2>Formulación variacional problema de Stokes</h2>
+				   </section>
+
+				   <section>
+				   <h4>Espacios funcionales</h4>
+					 <p>Sea $\Omega \subset \mathbb{R}^N$ un abierto, acotado y de borde Lipschitz.
+					 Se define el espacio de las funciones test (vectoriales) a divergencia nula </p>
+					 <div class="definition"> <br>
+                     $\mathcal{V} := \{\phi \in \mathcal{D}(\Omega)^N / div(\phi) = 0\}$
+					 </div>  
+					  <p>y también el espacio de las funciones a traza nula y divergencia nula</p>
+					 <div class="definition"> <br>
+                     $V := \{v \in H_0 ^1(\Omega)^N / div(v) = 0\}$
+					 </div> </p>
+				   </section>
+
+				   <section>
+				   <h4>Teorema de De Rham</h4>
+					 <div class="lemma">
+					 Si $f \in H^{-1}(\Omega)^N$ tal que $\forall \phi \in V$, $\langle f, \phi \rangle = 0$, entonces existe $p \in L^2(\Omega)$ tal que \[f = \nabla p\]
+                      Además, si $\Omega$ es conexo, entonces p es único en $L^2(\Omega)/ \mathbb{R}$.   
+					 </div>
+                      <div class="theorem">
+                      Si $f \in H^{-1}(\Omega)^N$ tal que $\forall \phi \in \mathcal{V}$, $\langle f, \phi \rangle = 0$, entonces existe $p \in L^2(\Omega)$ tal que \[f = \nabla p\]
+                      Además, si $\Omega$ es conexo, entonces p es único en $L^2(\Omega)/ \mathbb{R}$.
+                      </div>  
+				   </section>
+
+				   <section>
+    			   	 <h4>Formulación variacional Stokes en dominio octopus</h4>
+                     <p>Sea el siguiente dominio particionado 
+                     $\displaystyle{\Omega_\epsilon = \Omega_1 ^\epsilon \cup \Sigma_1^\epsilon \cup O_{\epsilon, L} \cup \Omega_2 ^\epsilon \cup \Sigma_2^\epsilon} \subset \mathbb{R}^2$
+                     , que llamaremos <em>Dominio Octopus</em>. El borde del dominio se denota $\Gamma_\epsilon = \partial \Omega_\epsilon$. </p> 
+                      <p align = "center"> 
+                      <img width="50%" height="50%"  src="imagenes/FormulacionVariacionalStokes/octopio.PNG" alt ="Dominio octopus" >
+    	              <br> <small class="caption"><b>Figura</b>: Dominio octopus</small>
+                      </p>
+                      <div class="definition">  <br>
+                      $V^\epsilon := \{v \in H_0 ^1(\Omega_\epsilon)^2 / div(v) = 0 \text{ en } \Omega_\epsilon\}$
+                      </div>
+				   </section>
+
+				   <section>
+				   <h4>Formulación Variacional de Stokes</h4>
+                   <p>\[(S)\left\{
+                    \begin{array}{c l}
+                     -\nu \Delta u + \nabla p =  f &amp; \textrm{en} \; \Omega_\epsilon \\
+                     div(u) = 0 &amp; \textrm{en} \; \Omega_\epsilon \\
+                     u  =  u_0 &amp; \textrm{sobre} \; \Gamma_\epsilon
+                    \end{array}
+                    \right.\]
+                    con $u_0 \in H^\frac{1}{2}(\Gamma_\epsilon)$ que cumple la condición de compatibilidad, es decir, 
+                    $\displaystyle{\int_{\Gamma_\epsilon} u_0 \cdot n ds = 0}$.
+                    Se sabe que existe $g \in H^1(\Omega_\epsilon)$ tal que 
+                    \[\left\{\begin{array}{ccll}
+                         div(g) & = & 0 &\text{ en } \Omega_\epsilon\\
+                         g & = & u_0 & \text{ sobre } \Gamma_\epsilon
+                    \end{array}\right.\]  </p>
+				   </section>
+                   
+                   <section>
+                      <p>Haciendo un relevo en la condición de borde, el problema se puede estudiar variacionalmente como</p>
+                      \[(FVS)\left\{
+                      \begin{array}{cl}
+                      \text{ Encontrar } v \in H^1(\Omega_\epsilon)^2 \text{ tal que }\\
+                       (v - g) \in V^\epsilon \\
+                       \displaystyle{\int_{\Omega_\epsilon} \nabla u : \nabla v dx} = \displaystyle{\int_{\Omega_\epsilon} f \cdot v dx}, \quad \forall v \in V^\epsilon
+                      \end{array}
+                      \right.\]
+                   </section>
+
+				   <section>
+				       <h4>Problema alternativo</h4>
+                        <p>El problema es que el problema anterior se vuelve muy costoso si $L$ es grande.
+                        Se define el siguiente subespacio de $V^\epsilon$
+                         <div class="definition">  <br>
+                         $W^\epsilon := \left\{ w \in V^\epsilon / w(x_1,x_2) = \begin{pmatrix}w_1(x_2) \\ 0 \end{pmatrix} \text{ con } (x_1, x_2) \in O_{\epsilon, L}\right\}$
+                        </div> 
+                         <div class="prop"> <br>
+                        $W^{\epsilon}$ es sev cerrado en $H_0 ^1(\Omega_\epsilon)^2$.
+                        </div> </p>
+				   </section>
+                   
+                   <section>
+                      <h4> Formulación Variacional </h4>
+                      <p>Se plantea el siguiente problema variacional
+                      \[(FVW)\left\{
+                      \begin{array}{cl}
+                      \text{ Encontrar } u \in H^1(\Omega_\epsilon)^2 \text{ tal que }\\
+                       (u - g) \in W^\epsilon \\
+                       \displaystyle{\int_{\Omega_\epsilon} \nabla u : \nabla w dx} = \displaystyle{\int_{\Omega_\epsilon} f \cdot w dx}, \quad \forall w \in W^\epsilon
+                      \end{array}
+                      \right.\]
+                      ¿Qué problema diferencial resuelve la solución de (FVW)? </p>
+                   </section>
+
+					<section>
+				      <h4> Adaptación de DeRham </h4>
+                      <div class="definition"> <br>
+                      \[Y^\epsilon = \left\{w \in H^1(\Omega_\epsilon)^2 / w \cdot n |_{\partial \Omega_\epsilon} = 0, div(w) = 0 \text{ en } \Omega_\epsilon, w|_{O_{\epsilon, L}} = \begin{pmatrix}w_1(x_2) \\ 0\end{pmatrix} \right\}\]
+                      </div>  
+                      <div class="lemma"> <br>
+                      \[{Y^{\epsilon}}^\perp  = \left\{ \varphi \in L^2(\Omega_\epsilon) ^2 \left/ 
+                      \varphi  =  \nabla p_k,
+                      \int_0 ^L \varphi_1 dx_1  =  [p], p_k \in H^1(\Omega_k ^\epsilon)/\mathbb{R}, k = 1,2
+                      \right\}\right.\]
+                      </div>
+				    </section>
+
+					 <section>
+				       <h4>Interpretación diferencial de la solución de (FVW)</h4>
+                       <div class="theorem">    <br>
+                        <small>Si u es solución de (FVW)  y suponiendo que $\Delta u \in L^2(\Omega_\epsilon)$, 
+                        entonces existe $p_k \in L^2(\Omega_k ^\epsilon)$ única salvo constante, con $k \in \{1, 2\}$ tal que</small>
+                        <small>\begin{equation}
+                          \left\{\begin{array}{rcl}
+                            -\Delta u + \nabla p_k & = & f \text{ en } \mathcal{D}^\prime(\Omega_k ^\epsilon) \\
+                            div(u)    & = & 0 \text{ en } \Omega_k ^\epsilon \\
+                            u         & = & u_0 \text{ en el sentido de la traza sobre } \partial \Omega_\epsilon \cap \partial \Omega_k ^\epsilon \\
+                            u & = & \begin{pmatrix} u_1 \\ g_2 \end{pmatrix} \text{ en el sentido de la traza sobre } \Sigma_k ^\epsilon
+                          \end{array}\right.
+                        \end{equation}
+                        \begin{equation} 
+                        \left\{\begin{array}{rcl}
+                           u_2 & = & g_2 \text{ en } \mathcal{D}^\prime(O_{\epsilon, L})\\
+                          \displaystyle{-\frac{d}{dx_2 ^2}\overline{u_1} + \frac{1}{L}[p]}  & = & \displaystyle{\overline{f_1}} \text{ en } \mathcal{D}^\prime((0, \epsilon)) \\
+                          \overline{u_1}(0)         = \displaystyle{\frac{1}{L}\int_0 ^L u_0(x_1,0)dx_1} &,& \overline{u_1}(\epsilon)         =  \displaystyle{\frac{1}{L}\int_0 ^L u_0(x_1, \epsilon) dx_1}, \\
+                          \displaystyle{\int_{0} ^{\epsilon} u_1 dx_2} & = & \displaystyle{-\int_{\partial \Omega_\epsilon \cap \partial \Omega_1 ^\epsilon} u_0 \cdot n ds}
+                        \end{array}\right.
+                        \end{equation}
+                        \begin{array}{rl}
+                          \text{ con }  \displaystyle{\overline{u_1}(\cdot)}  =  \displaystyle{\frac{1}{L} \int_0 ^L u_1(x_1,\cdot) dx_1}&,  & \displaystyle{\overline{f_1}(\cdot)}  =  \displaystyle{\frac{1}{L} \int_0 ^L f_1(x_1,\cdot) dx_1} \\            
+                        \end{array}
+                        </div> </small>
+				   </section>
+			  </section>
+
+
+				<section>
+					 <section>
+						 <h2> Modelo Hidrodinámico</h2>
+					 </section>
+					 <section>
+				   <h4>Modelo Hidrodinámico</h4>
+								<p>Para describir la concentración <span style="color:red">c(x,t)</span> de microalgas se utiliza la ecuación de advección(convección/transporte)-difusión:
+								\[\frac{\partial c(x,t)}{\partial t}+ div(c u)- div(  D\nabla c) = F\]
+								con <span style="color:red">$u$</span> la velocidad de la marea, $D$ la constante de difusión del alga en el mar y $F$ el término de fuente.
+								<br>
+                                <br>
+								Hipótesis de trabajo: $F = 0$.</p>
+				   </section>
+					 <section>
+				   <h4>Campo de velocidades</h4> 
+                       <p>El cálculo de la velocidad de marea se hará resolviendo numéricamente las ecuaciones de Navier-Stokes </p>
+                        \begin{align}
+                     \displaystyle{\frac{\partial u}{\partial t} + (u \cdot \nabla) u - \nu \Delta u}  & =    - \displaystyle{\nabla \frac{p}{\rho} + \frac{f}{\rho}} 
+                      \textrm{ en } \; \Omega 
+                      \label{eqn: EcuacionesNavierStokes}\\
+                     \nabla \cdot u & =  0  \textrm{ en } \; \Omega 
+                     \label{eqn: DivergenciaNula}
+                     \end{align}
+                    <p>con los siguientes parámetros  </p>
+                    <ul>
+                        <li> $f$ la fuerza por unidad de volumen. </li>
+                        <li> $\nu$ la viscosidad cinemática de un fluido. </li>
+                        <li> $\rho$ la densidad del fluido. </li>
+                    </ul> 
+				   </section>
+                   
+                   <section>
+				       <h4>Herramientas</h4>
+                          <ul>
+                        <li> MATLAB (MATrix LABoratory) </li>
+                        <li> OpenFOAM (Open Source Field Operation and Manipulation) </li>
+                        <li> ParaView </li>
+                    </ul> 
+				   </section>
+
+					 <section>
+				       <h4>Dominio</h4>
+                      <img width="430" height="400"  src="imagenes/Dominio/BahiaQuellonRelieve.PNG" alt ="Bahía Quellón, ubicado en Chiloé, Región de los Lagos.">
+                      <img width="430" height="400"  src="imagenes/Dominio/VolumenesFinitos.png" alt ="Volumenes Finitos.">
+	                  <small class="caption"><b> Figura izquierda</b>: Bahía Quellón, ubicado en Chiloé, Región de los Lagos. Extraído de Google Earth.
+                      <b> Figura derecha</b>: Malla de volúmenes finitos, visto con <em>ParaView</em>. La malla tiene
+                       54.116 puntos, 76.341 volúmenes finitos, 218.728 caras y 162.977 caras internas.</small>
+				   </section>
+			  </section>
+
+
+				<section>
+					 <section>
+				      <h2> Método De Volúmenes Finitos </h2>
+				   </section>
+						   <section>
+						       <h4>Discretización de Navier-Stokes</h4>
+                                <p>Notación: $u = (U, V, W)$ para la velocidad.
+                                Realizando el cambio de variable $\displaystyle{P = \frac{p}{\rho} - g z}$, 
+                                con $z$ la altura o profundidad del mar y $g$ la aceleración de gravedad.
+                                Sean $\omega_i \subset \Omega$ volúmenes finitos, con $i \in \{1, \ldots, N\}$ y 
+                                $N$ el número de volúmenes finitos, es decir 
+                                $\displaystyle{\Omega = \bigcup_{i=1} ^{N} \omega_i}$. 
+                                Sea $\omega_i$ un volumen finito,  cuyo borde es  
+                                $\displaystyle{\partial \omega_i = \bigcup_{j: \Gamma_{j} \text{ es cara de } \omega_i}  \Gamma_{j}}$. 
+                                Integrando sobre un volumen finito $\omega_i$ cualquiera, 
+                              \[\displaystyle{\int_{\omega_i} \frac{\partial U}{\partial t} d\omega + \int_{\omega_i} u \cdot \nabla U d\omega -  
+                              \nu \int_{\omega_i} \Delta U d\omega + \int_{\omega_i} \frac{\partial P}{\partial x} d\omega = 0}\] </p>
+						   </section>
+
+						   <section>
+					   	       <h4>Discretización de evolución y convección</h4>
+                               <ul>
+                                <li> Término de evolución:  </li>
+                                <p>\[\begin{array}{ccl}\displaystyle{\int_{\omega_i} \frac{\partial U}{\partial t} d\omega} 
+                                & \approx & \displaystyle{\frac{\left|\omega_i \right|}{\Delta t} (U_i ^k - U_i ^{k-1})} 
+                                \end{array}\] </p>
+                                <li> Término convectivo:   </li>
+                                <p>\begin{equation*}
+                                \label{eq:DiscretizacionTerminoConvecti}
+                                \displaystyle{
+                                \int_{\omega_i} u \cdot \nabla U d\omega
+                                \approx
+                                     \sum_{\substack{j : \Gamma_{j} \text{ cara de }  \omega_i \\  
+                                     \Gamma_j \text{ cara interna } \\
+                                     (u^k \cdot n)(\Gamma_{j}) < 0}} (U_{j} ^k -U_i ^k) (u^k \cdot n) (\Gamma_{j}) \left|\Gamma_{j}\right| }
+                                \end{equation*}  </p>
+                                <p>Obs:  Si $\Gamma_j = \partial \Omega_i \cap \partial \Omega_j$, se utiliza la condición <em>upwind</em> 
+                                <p>\[U^k(\Gamma_{j}) = 
+                                \begin{cases}
+                                  U_i ^k \quad \text{si } (u ^k\cdot n) (\Gamma_{j}) \geq 0 \\
+                                  U_{j} ^k  \quad \text{si } (u ^k\cdot n) (\Gamma_{j}) < 0 
+                                \end{cases}
+                                 \] </p> 
+                                </ul> 
+						   </section>
+
+						   <section>
+						      <h4>Discretización del término de difusión y término fuente:</h4>
+                              <ul>
+                               <li>Término de difusión:</li>
+                               <p>\[\begin{array}{ccll}
+                              \displaystyle{ \int_{\omega_i} \Delta U d\omega} 
+                              & \approx & \displaystyle{\sum_{\substack{j : \Gamma_{j} \text{ cara de }  \omega_i \\  
+                                     \Gamma_j \text{ cara interna } }} \frac{(U_{j} ^k - U_i ^k)}{d_c (\omega_i, \omega_{j})} \left|\Gamma_{j}\right| + 
+                                     \sum_{\substack{j : \Gamma_{j} \text{ cara de }  \omega_i \\  
+                                     \Gamma_j \text{ cara de borde } }} \frac{(U_{\Gamma_j} ^k - U_i ^k)}{d_c (\omega_i, \Gamma_{j})} \left|\Gamma_{j}\right|} \\
+                              \end{array}\]</p>
+                               <li>Término fuente:</li>
+                               <p>\[\begin{array}{ccll}
+                              \displaystyle{\int_{\omega_i} \frac{\partial P}{\partial x} d\omega} 
+                              & \approx & \displaystyle{\sum_{j  :  \Gamma_{j} \text{ cara de }  \omega_i} P_{j}n_x (\Gamma_{j})\left|\Gamma_{j}\right|} \\
+                              \end{array}\]  </p>
+                            <ul>   
+                           Pero aún no está resuelto... 
+						   </section>
+                               
+						   <section>
+						      <h4>Complicaciones adicionales Navier-Stokes</h4>
+                                  <ol>
+                                  <li> El término convectivo es no lineal, luego para escribir el sistema matricial se realizan iteraciones tipo punto fijo. </li>
+                                  <li> Faltan ecuaciones. No hay ecuación para la presión.</li>
+                                  </ol>
+                                  <p>La presión se define como: </p>
+                                  <ul>
+                                      <li> En cada volumen la presión es incógnita. Acá tienen asociadas la condición de divergencia nula. </li>
+                                      <li> En los bordes en que hay condición de borde Dirichlet para la velocidad, hay una presión incógnita en las caras de dicho borde. </li>
+                                      <li> En los bordes en que NO hay condición de borde Dirichlet para la velocidad, la presión debe ser dato. </li>
+                                  </ul>
+                                  <p>Así se consiguen tantas ecuaciones como incógnitas.</p>
+						   </section>
+
+						   <section>
+						       <h4>Sistema matricial de Navier-Stokes</h4>
+                               <p>Para una cierta etapa temporal $k \in \mathbb{N}$ fija y para cada $\ell \in \mathbb{N}$, el sistema de ecuaciones se escribe en forma matricial a continuación
+                              \begin{equation*}
+                              \begin{bmatrix}
+                              A_{UU} & 0_{N\times N} & 0_{N \times N} & A_{UP} \\
+                              0_{N \times N} & A_{VV} & 0_{N \times N} & A_{VP} \\
+                              0_{N \times N} & 0_{N \times N} & A_{WW} & A_{WP} \\
+                              A^T_{UP} & A^T_{VP} & A^T_{WP} & 0_{M \times N}
+                              \end{bmatrix}
+                              \begin{pmatrix}
+                              U^{k,\ell} \\
+                              V^{k,\ell} \\
+                              W^{k,\ell} \\
+                              P^{k,\ell}
+                              \end{pmatrix}
+                              = 
+                              \begin{pmatrix}
+                              b_{U} \\
+                              b_{V} \\
+                              b_{W} \\
+                              b_{P} \\
+                              \end{pmatrix}
+                              \end{equation*} 
+                              \[\begin{array}{cccl} 
+                                   \text{donde } & U^{k,\ell} & = & (U_1 ^{k,\ell},\ldots, U_N ^{k,\ell}) \\
+                                   & V^{k,\ell} & = & (V_1 ^{k,\ell},\ldots, V_N ^{k,\ell}) \\ 
+                                   & W^{k,\ell} & = & (W_1 ^{k,\ell},\ldots, W_N ^{k,\ell}) \\
+                                   & P^{k,\ell} & = & (P_1 ^{k,\ell},\ldots, P_N ^{k,\ell}, P_{N+1} ^{k,\ell} \ldots P_{M} ^{k,\ell}) \\
+                              \end{array}\]  </p>
+						   </section>
+
+						   <section>
+						       <h4>Condiciones de Borde de Navier-Stokes</h4>
+                            <table>
+                				<thead>
+                					<th>Regiones del borde</th>
+                					<th>Condición sobre u</th>
+                                    <th>Condición sobre P</th>
+                				</thead>
+                				<tr>
+                					<td>Fondo</td>
+                					<td>$u \cdot n = 0$</td>
+                                    <td>no hay</td>
+                				</tr>
+                				<tr>
+                					<td>Superficie</td>
+                					<td>$W = -A\omega sen(\omega t)$</td>
+                                    <td>no hay</td>
+                				</tr>
+                                <tr>
+                					<td>Mar-Tierra</td>
+                					<td>$u = 0$</td>
+                                    <td>no hay</td>
+                				</tr>
+                                <tr>
+                					<td>Mar-Mar</td>
+                					<td>$\frac{\partial u}{\partial n} = 0$</td>
+                                    <td>$P = 0$</td>
+                				</tr>
+                			</table>
+                            <small class="caption"><b>Tabla</b>: Resumen condiciones de borde en Navier-Stokes implementadas en MATLAB.</small> 
+                            <p>Obs: La condición $P = 0$ en Mar-Mar, equivale a $p = \rho g h$ la famosa fórmula de presión hidrostática. </p>
+						   </section>
+                           
+							 <section>
+								 <h4>Discretización advección-difusión</h4>
+                                  <ul>
+                                  <li> Término de evolución: </li>
+                                  <p>\[\begin{array}{ccl}
+                                  \displaystyle{\int_{\omega_i} \frac{\partial c}{\partial t} d\omega} 
+                                  & \approx & \displaystyle{\frac{\left|\omega_i\right|}{\Delta t} (c_i ^k - c_i ^{k-1})}
+                                  \end{array}\] </p>
+                                  <li> Término convectivo: </li> 
+                                   <p>\[\displaystyle{\int_{\omega_i}div(c u) d\omega \approx \sum_{\substack{j : \Gamma_{j} \text{ cara de } \omega_i \\
+                                   \Gamma_j \text{ cara interna } \\
+                                   (u^k \cdot n)(\Gamma_{j}) < 0}} (c_{j} ^k -c_i ^k) (u^k \cdot n) (\Gamma_{j}) \left|\Gamma_{j}\right| }\] </p>
+                                   <li> Término difusivo:</li>
+                                   <p>\[\begin{array}{ccll}
+                              \displaystyle{ \int_{\omega_i} \Delta U d\omega} 
+                              & \approx & \displaystyle{\sum_{\substack{j : \Gamma_{j} \text{ cara de }  \omega_i \\  
+                                     \Gamma_j \text{ cara interna } }} D\frac{(c_{j} ^k - c_i ^k)}{d_c (\omega_i, \omega_{j})} \left|\Gamma_{j}\right| + 
+                                     \sum_{\substack{j : \Gamma_{j} \text{ cara de }  \omega_i \\  
+                                     \Gamma_j \text{ cara de borde } }} D\frac{(c_{\Gamma_j} ^k - c_i ^k)}{d_c (\omega_i, \Gamma_{j})} \left|\Gamma_{j}\right|} \\
+                              \end{array}\]</p>
+                              </ul>
+							 </section>
+                             
+                             <section>
+                                 <h4> Condición de borde de Advección-Difusión </h4>
+                                  <table>
+                				<thead>
+                					<th>Regiones del borde</th>
+                					<th>Condición sobre c</th>
+                				</thead>
+                				<tr>
+                					<td>Fondo</td>
+                					<td>$\frac{\partial c}{\partial n} = 0$</td>
+                				</tr>
+                				<tr>
+                					<td>Superficie</td>
+                					<td>$\frac{\partial c}{\partial n} = 0$</td>
+                				</tr>
+                                <tr>
+                					<td>Mar-Tierra</td>
+                					<td>$\frac{\partial c}{\partial n} = 0$</td>
+                				</tr>
+                                <tr>
+                					<td>Mar-Mar</td>
+                					<td>$\frac{\partial c}{\partial n} = 0$</td>
+                				</tr>
+                			</table>
+                            <small class="caption"><b>Tabla</b>: Resumen condiciones de borde en Convección-Difusión implementadas en MATLAB.</small>
+                             </section>
+				   </section>
+
+				<section>
+					<section>
+				       <h3> Resultados </h3>
+                       <p>El computador utilizado tiene las siguientes características
+                       Procesador Intel(R) Pentium(R) CPU N3540 @2.16 GHz 2.16 GHz, 8.00 GB de memoria RAM, 4 núcleos. </p>
+					</section>
+                 </section>  
+                  
+			   <section>
+			       <h4>Resultados: Shallow Water</h4>
+                   <section>
+                   <p>Integrando en profundidad las ecuaciones de Navier-Stokes se obtienen las ecuaciones de Shallow Water</p>
+		 					\[\begin{array}{rcl}
+                                \displaystyle{\frac{\partial}{\partial t}(hu) + \nabla \cdot (hu u^T) + f \times hu} & = & \displaystyle{-\left|g\right| \nabla (h + h_0)}  \\
+                                \displaystyle{\frac{\partial h}{\partial t} + \nabla \cdot(hu)} & = & 0 \\
+                           \end{array}\]
+                           <p>con $u=(u_1(t,x,y), u_1(t,x,y))$, la velocidad horizontal, $h(t,x,y)$ la distancia desde el fondo a la superficie, $h_0(x,y)$ la distancia desde el sistema de referencia y $f$
+                           la fuerza de Coriolis. </p>
+		 			</section> 
+                   <section>
+		 					<p align="center">
+		 					<video  data-autoplay controls src="videos/MallaDinamicaOleajeShallowWater5seg.mp4" type="video/mp4" />      
+                              </p>
+                              <p align="center"> <small class="caption"> Marea obtenida con OpenFOAM. </small> </p>
+		 			</section> 
+                    <section>
+		 					<p align="center">
+		 					<video  data-autoplay controls src="videos/MallaDinamicaMasFramesCeleste.mp4" type="video/mp4" />      
+                              </p>
+                              <p align="center"> <small class="caption"> Malla Dinámica implementada en MATLAB. </small> </p>
+		 			</section>
+			   </section>
+
+			   <section>
+			        <h4>Resultados: Navier-Stokes</h4>
+                    <section>
+		 					<p align="center">
+		 					<video  data-autoplay controls src="videos/Velocidadnu001MATLAB.mp4" type="video/mp4" />      
+                              </p>
+                              <p align="center"> <small class="caption"> Velocidad obtenida al resolver Navier-Stokes con MATLAB. $\nu=0.01$. </small> </p>
+                              <p>Tiempo de simulación: 1 día  ($86400$ s). Tiempo de ejecución: 48 horas con 5 mins ($173132$ s). </p>
+		 			</section> 
+                    <section>
+		 					<p align="center">
+		 					<video  data-autoplay controls src="videos/Particulas3D10MaxLength.mp4" type="video/mp4" />      
+                              </p>
+                              <p align="center"> <small class="caption"> Trayectoria de las partículas. Velocidad Obtenida con MATLAB, $\nu=0.01$. </small> </p>
+		 			</section>
+				    <section>
+		 					<p align="center">
+		 					<video  data-autoplay controls src="videos/Velocidadnu1OpenFOAMColorEscaladoMasGlyph.mp4" type="video/mp4" />      
+                              </p>
+                              <p align="center"> <small class="caption"> Velocidad obtenida al resolver Navier-Stokes con OpenFOAM. $\nu=1$. </small> </p>
+                              <p>Tiempo de simulación: $ 7 $ días ($604800$ s). Tiempo de ejecución: 86 horas, 17 minutos y 38 segundos, ($310658$s).</p>
+		 			</section>     
+			   </section>
+
+                                                                               
+			   <section>
+		   	         <h4>Resultados: Advección-Difusión</h4>
+                     <section>
+						 <p align="center">	
+                           <video data-autoplay controls src="videos/Concentracionnu001MATLAB.mp4" type="video/mp4" />
+                           </p>
+                           <p align="center"> <small class="caption">Concentración de microalga obtenida con MATLAB, usando la velocidad obtenida con MATLAB.
+                           $\nu = 0.01$, $D=0.03$. </small> </p>
+					 </section>
+					 <section>
+						 <p align="center">	
+                           <video data-autoplay controls src="videos/Concentracion7diasVelocidadOFConcentracionMatlab3.mp4" type="video/mp4" />
+                           </p>
+                           <p align="center"> <small class="caption">Concentración de microalga obtenida con MATLAB, usando la velocidad obtenida con OpenFOAM.
+                           $\nu = 1$, $D=0.03$. </small> </p>
+					 </section>
+			    </section>
+
+
+                 <section>
+                      <h3>Conclusión</h3>
+                      <ul>
+                        <li> Solvers para caso laminar </li>
+                        <li> Tiempo de ejecución OpenFOAM vs MATLAB </li>  
+                        <li> Estabilidad de las discretizaciones </li>
+                        <li> Flexibilidad en modificaciones  </li>
+                        <li> Falta de datos reales </li>
+                    </ul>
+                </section>
+                
+                <section>
+                      <h3>Trabajo futuro</h4>
+                      <ul>
+                          <li> Mejorar la malla 
+                          <li> Utilizar <em>paralelismo</em> y mejorar el desempeño del solver en MATLAB </li>
+                          <li> Retomar las implementaciones en C++, pero usando UFMPACK para resolver los sistemas matriciales </li>
+                          <li> Implementar modelos de turbulencia (como el $k-\epsilon$) </li>    
+                    </ul>
+                </section>
+            </section>
+               
+
+				<!--<section>
+					<h2>	Partículas youtube</h2>
+					<p>VIDEO Youtube</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/duQKcOU56LQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>-->
+
+				<!--<section>
+					<h2>	Concentración de microalgas youtube</h2>
+					<p>VIDEO Youtube</p>
+					<iframe data-autoplay width="560" height="315" src="https://www.youtube.com/embed/GKTavEOfMZ4" showinfo="0" frameborder="0" allowfullscreen=""></iframe>
+				</section>-->
+
+				<!--<section data-background-color="#ff0000">
+					<h2>Una cita</h2>
+					<p>se hace con blockquote</p>
+					<blockquote>"Un gran poder conlleva una gran responsabilidad" </blockquote>
+					<p>Frase del ex presidente Franklink Roosevelt
+				</section>
+				<section data-background-image="imagenes/paris4.jpg">
+					<h2>	títulos para las diapos 6</h2>
+					<p>texto dentro de párrafos</p>
+				</section>
+				<section>
+					<h2>	crear hipervículos externos</h2>
+					<p>Volver a pagina <a href="#/1/3"> de particulas (video) </a></p>
+				</section>
+      <section>
+				<h2> </h2>
+				<p> </p>
+			</section>-->
+
+			<!---<h2>	títulos para las diapos 3</h2>
+			<table>
+				<thead>
+					<th>encabezado 1</th>
+					<th>encabezado 2</th>
+				</thead>
+				<tr>
+					<td>dato 1</td>
+					<td>dato 2</td>
+				</tr>
+				<tr>
+					<td>dato 3</td>
+					<td>dato 4</td>
+				</tr>
+			</table>
+			<p>texto dentro de párrafos</p>-->
+			</div>
+		</div>
+
+    <!-- scripts del frameworks -->
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				//hash: true,
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true, //agregadas recien
+				slideNumber: true,
+				//fragments: true,
+
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+
+				dependencies: [
+					//{ src: 'plugin/markdown/marked.js' },
+					//{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
