@@ -1,0 +1,16 @@
+
+
+ffmpeg -i  Concentracion7diasVelocidadOFConcentracionMatlab50FPSConGlyphEscaladoEnU.avi Concentracion7diasVelocidadOFConcentracionMatlab.mp4
+
+ffmpeg -i Concentracion7diasVelocidadOFConcentracionMatlab50FPSConGlyphEscaladoEnU.avi -c:v libx264 -crf 20 -c:a aac -strict -2 Concentracion7diasVelocidadOFConcentracionMatlab3.mp4
+
+%  No Funcionan
+ffmpeg -i Concentracion7diasVelocidadOFConcentracionMatlab50FPSConGlyphEscaladoEnU.avi -vcodec copy -acodec copy Concentracion7diasVelocidadOFConcentracionMatlab.mp4
+ffmpeg -i  Concentracion7diasVelocidadOFConcentracionMatlab50FPSConGlyphEscaladoEnU.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 Concentracion7diasVelocidadOFConcentracionMatlab.mp4
+%
+
+ffmpeg -i Concentracionnu001MATLAB.avi -c:v libx264 -crf 20 -c:a aac -strict -2 Concentracionnu001MATLAB.mp4
+
+ffmpeg -i Velocidadnu001MATLAB.avi -c:v libx264 -crf 20 -c:a aac -strict -2 Velocidadnu001MATLAB.mp4
+
+ffmpeg -i Particulas3D10MaxLength.avi -ss 00:00:0 -f image2 -vframes 1 Particulas3D10MaxLength.png
